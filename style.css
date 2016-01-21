@@ -1,0 +1,40 @@
+/*
+Theme Name: Bike Monkey 2016
+Theme URI: http://www.bikemonkey.net
+Author: Carlos Perez, Bike Monkey Labs
+Author URI: https://www.bikemonkey.net
+Description: 2016 Bike Monkey Website in all its splendor. Fully responsive. Rad.
+License: No License.
+*/
+#instagramfeed {white-space: nowrap;}
+#instagramfeed li {display: inline-block;}
+
+/* Default some padding here. Can be overridden with custom CSS in page settings */
+.default-section, .w-section {
+  padding:20px;
+}
+.default-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px;
+}
+.default-container:before,
+.default-container:after {
+  content: " ";
+  display: table;
+}
+.default-container:after {
+  clear: both;
+}
+.default-container .w-row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.slide-header, .event-title {
+  text-transform: uppercase;
+}
+
+.event-header {
+  min-height:400px;
+}
