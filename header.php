@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?> class="no-js">
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
-  <title>Wente</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><?php bloginfo('name'); ?><?php wp_title(' - ', true, 'left'); ?></title>
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/wpcore.css">
   <link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/webflow.css">
   <link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/bikemonkey.webflow.css">

@@ -1848,6 +1848,7 @@ textarea.w-select {
   float: right;
   padding: 18px;
   font-size: 24px;
+  color:#333;
   display: none;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);

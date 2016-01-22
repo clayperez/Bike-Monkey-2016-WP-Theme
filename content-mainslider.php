@@ -1,5 +1,5 @@
 <?php if( have_rows('main_slider_slides') ): ?>
-  <div data-animation="slide" data-duration="1000" data-infinite="1" data-delay="6000" data-autoplay="1" data-nav-spacing="4" class="w-slider opener">
+  <div data-animation="slide" data-duration="1000" data-infinite="1" data-delay="8000" data-autoplay="1" data-nav-spacing="4" class="w-slider opener">
     <div class="w-slider-mask">
 
       <?php while( have_rows('main_slider_slides') ): the_row(); 

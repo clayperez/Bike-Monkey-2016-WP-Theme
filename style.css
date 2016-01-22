@@ -6,35 +6,29 @@ Author URI: https://www.bikemonkey.net
 Description: 2016 Bike Monkey Website in all its splendor. Fully responsive. Rad.
 License: No License.
 */
-#instagramfeed {white-space: nowrap;}
+
+/* GLOBAL FIXERS BECAUSE OF BOOTSTRAP FROM PLUGIN INCLUSIONS */
+a:active, a:focus, a:hover {text-decoration: none !important;color:inherit !important;}
+
+/* CUSTOM DIVS */
+#instagramfeedcontainer {padding:0;overflow:scroll;}
+#instagramfeed {white-space: nowrap;margin:0;padding:0;}
 #instagramfeed li {display: inline-block;}
+#lasttweet {text-align: center;}
 
-/* Default some padding here. Can be overridden with custom CSS in page settings */
-.default-section, .w-section {
-  padding:20px;
-}
-.default-container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 940px;
-}
+/* STYLE SECTION LINKS */
+.w-section a:hover {text-decoration: underline;}
+
+/* WYSIWYG EDITOR CONTENT LAYOUT */
+.default-section, .w-section {padding:20px;}
+.default-container {margin-left: auto;margin-right: auto;max-width: 940px;}
 .default-container:before,
-.default-container:after {
-  content: " ";
-  display: table;
-}
-.default-container:after {
-  clear: both;
-}
-.default-container .w-row {
-  margin-left: -10px;
-  margin-right: -10px;
-}
+.default-container:after {content: " ";display: table;}
+.default-container:after {clear: both;}
+.default-container .w-row {margin-left: -10px;margin-right: -10px;}
 
-.slide-header, .event-title {
-  text-transform: uppercase;
-}
-
-.event-header {
-  min-height:400px;
-}
+/* RESPONSIVE VIDEO EMBEDS */
+.video-container {position: relative;padding-bottom: 56.25%;padding-top: 0; height: 0; overflow: hidden;margin:10px 0;}
+.video-container iframe,
+.video-container object,
+.video-container embed {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}

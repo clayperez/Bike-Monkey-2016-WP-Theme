@@ -41,7 +41,7 @@
                 // There are submenu items, render a dropdown menu for the parent and then render its children
                 // BEGIN: DROPDOWN MENU
                 $menu_list .= "<div data-delay='0' class='w-dropdown dropdown-container'>";
-                  $menu_list .= "<div class='w-dropdown-toggle header-nav-link dropdown-menu'>";
+                  $menu_list .= "<div class='w-dropdown-toggle header-nav-link bm-dropdown-menu'>";
                     $menu_list .= "<div>".$menu_item->title."</div>";
                     $menu_list .= "<div class='w-icon-dropdown-toggle'></div>";
                   $menu_list .= "</div>";
