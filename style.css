@@ -10,11 +10,17 @@ License: No License.
 /* GLOBAL FIXERS BECAUSE OF BOOTSTRAP FROM PLUGIN INCLUSIONS */
 a:active, a:focus, a:hover {text-decoration: none !important;color:inherit !important;}
 
+/* WORDPRESS CORE TWEAKS */
+.alignnone {margin:0 !important;}
+
 /* CUSTOM DIVS */
 #instagramfeedcontainer {padding:0;overflow:scroll;}
 #instagramfeed {white-space: nowrap;margin:0;padding:0;}
 #instagramfeed li {display: inline-block;}
 #lasttweet {text-align: center;}
+
+/* APPEARS WHEN A HEADER IMAGE SRC ISN'T PROVIDED */
+.header-image-placeholder { display:inline-block; width: 120px; height:100px; margin:15px; }
 
 /* STYLE SECTION LINKS */
 .w-section a:hover {text-decoration: underline;}
@@ -28,7 +34,9 @@ a:active, a:focus, a:hover {text-decoration: none !important;color:inherit !impo
 .default-container .w-row {margin-left: -10px;margin-right: -10px;}
 
 /* RESPONSIVE VIDEO EMBEDS */
+/* ALSO RESPONSIVE MAP EMBEDS VIA IFRAM FROM GOOGLE MY MAPS. REMEMBER TO WRAP WITH .video-container DIV.map */
 .video-container {position: relative;padding-bottom: 56.25%;padding-top: 0; height: 0; overflow: hidden;margin:10px 0;}
+.video-container.map {padding-bottom: 65.25%;margin:0;}
 .video-container iframe,
 .video-container object,
-.video-container embed {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.video-container embed {position: absolute;top: 0;left: 0;width: 100%;height: 100%; border:none;}

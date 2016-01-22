@@ -28,6 +28,9 @@
   // ACF GENERAL PAGE SETTINGS
   $bodyBG = get_field( "body_color" );
   $fontColor = get_field( "font_color" );
+  $linkColor = get_field( "link_color" );
+
+  if($linkColor != ""){ echo "<style>body a {color:$linkColor;}</style>"; }
 ?>
 
 <!-- OPEN UP THE BODY -->

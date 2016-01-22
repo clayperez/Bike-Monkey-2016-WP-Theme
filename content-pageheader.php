@@ -11,7 +11,10 @@
 
   <div class="w-section-subpage event-header" style="<?php echo $backgroundCSS; ?>">
     <div class="w-container event-title-container">
-      <img src="<?php echo $logo; ?>" class="event-logo">
+      <?php
+        if($logo != ""){ echo "<img src='$logo' class='event-logo'>"; }
+        else{ echo "<div class='header-image-placeholder'></div>"; }
+      ?>
       <h1 class="event-title"><?php echo $title; ?></h1>
       <h4 class="event-date"><?php echo $subtitle; ?></h4>
     </div>
