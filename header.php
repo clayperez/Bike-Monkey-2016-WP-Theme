@@ -22,16 +22,19 @@
   <link rel="shortcut icon" type="image/x-icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/2013_circleLogo.png">
   <link rel="apple-touch-icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/2013_circleLogo.png">
   <?php wp_head(); ?>
+
+  <?php
+    // ACF GENERAL PAGE SETTINGS
+    $bodyBG = get_field( "body_color" );
+    $fontColor = get_field( "font_color" );
+    $linkColor = get_field( "link_color" );
+    $pagestyle = get_field( "custom_style" );
+  
+    if($linkColor != ""){ echo "<style>body a {color:$linkColor;}</style>"; }
+    if($pagestyle != ""){ echo "<style>$pagestyle</style>"; }
+  ?>
+
 </head>
-
-<?php
-  // ACF GENERAL PAGE SETTINGS
-  $bodyBG = get_field( "body_color" );
-  $fontColor = get_field( "font_color" );
-  $linkColor = get_field( "link_color" );
-
-  if($linkColor != ""){ echo "<style>body a {color:$linkColor;}</style>"; }
-?>
 
 <!-- OPEN UP THE BODY -->
 <body style="background:<?php echo $bodyBG; ?>;color:<?php echo $fontColor; ?>;">
